@@ -6,7 +6,7 @@ import SideBar from "../components/SideBar"
 
 function RootLayout() {
   return (
-    <Grid templateColumns="repeat(6, 1fr)" bg="gray.200">
+    <Grid templateColumns="repeat(6, 1fr)">
       <GridItem 
         as="aside" 
         colSpan={{base:"6", md:"1"}}
