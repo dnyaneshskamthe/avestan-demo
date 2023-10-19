@@ -80,7 +80,7 @@ export default function SideBar() {
                           p="10px"
                           borderRadius="10px"
                         >
-                          <NavLink to="/create">
+                          <NavLink to="/create/createForm">
                           <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon as={BsAmd} color="gray.500" ml="10px" />
@@ -96,7 +96,7 @@ export default function SideBar() {
                           p="10px"
                           borderRadius="10px"
                         >
-                          <NavLink to="/create">
+                          <NavLink to="/create/createLedger">
                           <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon
@@ -116,7 +116,7 @@ export default function SideBar() {
                           p="10px"
                           borderRadius="10px"
                         >
-                          <NavLink to="/create">
+                          <NavLink to="/create/createLoan">
                           <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon
@@ -136,7 +136,7 @@ export default function SideBar() {
                           p="10px"
                           borderRadius="10px"
                         >
-                          <NavLink to="/create">
+                          <NavLink to="/create/createLevel">
                           <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
                             <Button bg="gray.200" w="10px" mr="10px" width="20px">
                               <ListIcon
