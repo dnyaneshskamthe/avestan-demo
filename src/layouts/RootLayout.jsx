@@ -9,13 +9,14 @@ function RootLayout() {
     <Grid templateColumns="repeat(6, 1fr)">
       <GridItem 
         as="aside" 
-        colSpan={{base:"6", md:"1"}}
-        minHeight={{base:"50px", md:"50px", lg:"100vh" ,}}>
+        colSpan={{base:"1", md:"1"}}
+        minWidth={{base:"20px"}}
+        minHeight={{base:"100vh", md:"100vh", lg:"100vh" ,}}>
         <SideBar/>
       </GridItem>
       <GridItem 
         as="main"
-        colSpan={{base:"6", md:"5"}}
+        colSpan={{base:"5", md:"5"}}
         >
         <Navbar/>
         <Outlet/>

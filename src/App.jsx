@@ -15,6 +15,7 @@ import Help from './pages/Help'
 // import CreateLevel from './pages/forms/CreateLevel'
 // import CreateLoan from './pages/forms/CreateLoan'
 import CreateCompany from './pages/forms/CreateCompany'
+import "./basic/basic.css"
 
 // router and routes
 

@@ -48,7 +48,7 @@ export default function SideBar() {
               <Button bg="blue.900" w="10px" mr="10px">
                 <ListIcon as={BsGrid} color="white" ml="10px" />
               </Button>
-              Dashboard
+              <Text as ="span" className="sidebar-text">Dashboard</Text>
             </NavLink>
           </ListItem>
 
@@ -67,7 +67,7 @@ export default function SideBar() {
                           <Button bg="gray.200" w="10px" mr="10px" ml="0px">
                             <ListIcon as={AddIcon} color="gray.500" ml="10px" />
                           </Button>
-                          <Text as="span" pl="10px" fontSize="15px">
+                          <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                             Create
                           </Text>
                           {isExpanded ? (
@@ -89,7 +89,7 @@ export default function SideBar() {
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon as={BsAmd} color="gray.500" ml="10px" />
                             </Button>
-                            <Text as="span" pl="10px" fontSize="14px" color="black">
+                            <Text as ="span" className="sidebar-text" pl="10px" fontSize="14px" color="black">
                               Create Form
                             </Text>
                           
@@ -111,7 +111,7 @@ export default function SideBar() {
                                 ml="10px"
                               />
                             </Button>
-                            <Text as="span" pl="10px" fontSize="14px" color="black">
+                            <Text as ="span" className="sidebar-text" pl="10px" fontSize="14px" color="black">
                               Career Ledger
                             </Text>
                           
@@ -133,7 +133,7 @@ export default function SideBar() {
                                 ml="10px"
                               />
                             </Button>
-                            <Text as="span" pl="10px" fontSize="14px" color="black">
+                            <Text as ="span" className="sidebar-text" pl="10px" fontSize="14px" color="black">
                               Create Loan
                             </Text>
                             </ListItem>
@@ -154,7 +154,7 @@ export default function SideBar() {
                                 ml="10px"
                               />
                             </Button>
-                            <Text as="span" pl="10px" fontSize="14px" color="black">
+                            <Text as ="span" className="sidebar-text" pl="10px" fontSize="14px" color="black">
                               Create Level
                             </Text>
                             </ListItem>
@@ -193,7 +193,7 @@ export default function SideBar() {
               <Button bg="gray.200" w="10px" mr="10px">
                 <ListIcon as={BsAmd} color="gray.500" ml="10px" />
               </Button>
-              <Text as="span" pl="10px" fontSize="15px">
+              <Text as ="span" className="sidebar-text"pl="10px" fontSize="15px">
                 Career
               </Text>
             </NavLink>
@@ -208,7 +208,7 @@ export default function SideBar() {
                   ml="10px"
                 />
               </Button>
-              <Text as="span" pl="10px" fontSize="15px">
+              <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                 Balancesheet
               </Text>
             </NavLink>
@@ -219,7 +219,7 @@ export default function SideBar() {
               <Button bg="gray.200" w="10px" mr="10px">
                 <ListIcon as={CiMoneyBill} color="gray.500" ml="10px" />
               </Button>
-              <Text as="span" pl="10px" fontSize="15px">
+              <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                 Profit & Loss
               </Text>
             </NavLink>
@@ -234,7 +234,7 @@ export default function SideBar() {
                   ml="10px"
                 />
               </Button>
-              <Text as="span" pl="10px" fontSize="15px">
+              <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                 Report
               </Text>
             </NavLink>
@@ -247,7 +247,7 @@ export default function SideBar() {
               <Button bg="gray.200" w="10px" mr="10px">
                 <ListIcon as={BsFlagFill} color="gray.500" ml="10px" />
               </Button>
-              <Text as="span" pl="10px" fontSize="15px">
+              <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                 Help
               </Text>
             </NavLink>
@@ -258,7 +258,7 @@ export default function SideBar() {
               <ListIcon as={CiLogout} ml="10px" />
             </Button>
 
-            <Text as="span" pl="10px" fontSize="15px">
+            <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
               Logout
             </Text>
           </ListItem>
