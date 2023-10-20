@@ -78,12 +78,13 @@ export default function SideBar() {
                         </AccordionButton>
                       </h2>
                       <AccordionPanel pb={4}>
+                      <NavLink to="/create/createForm">
                         <ListItem
                           className="listItem"
                           p="10px"
                           borderRadius="10px"
                         >
-                          <NavLink to="/create/createForm">
+                          
                           <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon as={BsAmd} color="gray.500" ml="10px" />
@@ -91,15 +92,17 @@ export default function SideBar() {
                             <Text as="span" pl="10px" fontSize="14px" color="black">
                               Create Form
                             </Text>
-                          </NavLink>
+                          
                         </ListItem>
-
+                        </NavLink>
+                        
+                        <NavLink to="/create/createLedger">
                         <ListItem
                           className="listItem"
                           p="10px"
                           borderRadius="10px"
                         >
-                          <NavLink to="/create/createLedger">
+                          
                           <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon
@@ -111,15 +114,17 @@ export default function SideBar() {
                             <Text as="span" pl="10px" fontSize="14px" color="black">
                               Career Ledger
                             </Text>
-                          </NavLink>
+                          
                         </ListItem>
+                        </NavLink>
 
+                        <NavLink to="/create/createLoan">
                         <ListItem
                           className="listItem"
                           p="10px"
                           borderRadius="10px"
                         >
-                          <NavLink to="/create/createLoan">
+                          
                           <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon
@@ -131,15 +136,16 @@ export default function SideBar() {
                             <Text as="span" pl="10px" fontSize="14px" color="black">
                               Create Loan
                             </Text>
+                            </ListItem>
                           </NavLink>
-                        </ListItem>
-
+                        
+                          <NavLink to="/create/createLevel">
                         <ListItem
                           className="listItem"
                           p="10px"
                           borderRadius="10px"
                         >
-                          <NavLink to="/create/createLevel">
+                          
                           <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
                             <Button bg="gray.200" w="10px" mr="10px" width="20px">
                               <ListIcon
@@ -151,9 +157,9 @@ export default function SideBar() {
                             <Text as="span" pl="10px" fontSize="14px" color="black">
                               Create Level
                             </Text>
+                            </ListItem>
                           </NavLink>
-                        </ListItem>
-
+                        
                         <Divider borderWidth="1px" borderColor={"gray"} />
 
                         {/* <ListItem

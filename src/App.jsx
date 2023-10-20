@@ -14,6 +14,7 @@ import Help from './pages/Help'
 // import CreateLedger from './pages/forms/CreateLedger'
 // import CreateLevel from './pages/forms/CreateLevel'
 // import CreateLoan from './pages/forms/CreateLoan'
+import CreateCompany from './pages/forms/CreateCompany'
 
 // router and routes
 
@@ -21,25 +22,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout/>}>
         <Route index element={<Dashboard/>}></Route>
-        <Route path="/create/*" element={<Create/>}>
-          {/* <Route
-            path="/createForm"
-            element={<CreateForm />}
-          />
-          <Route
-            path="/createLedger"
-            element={<CreateLedger />}
-          />
-          <Route
-            path="/createLevel"
-            element={<CreateLevel />}
-          />
-          <Route
-            path="/createLoan"
-            element={<CreateLoan />}
-          />
-          */}
-          </Route> 
+        {/* <Route path="/dashboard/*" element={<Dashboard/>}></Route> */}
+        <Route path="/createCompany" element={<CreateCompany/>}/>
+        <Route path="/create/*" element={<Create/>}></Route> 
         <Route path="/help" element={<Help/>}></Route>
     </Route>
   )
