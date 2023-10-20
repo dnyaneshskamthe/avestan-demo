@@ -58,6 +58,8 @@ export default function SideBar() {
 
           <Divider borderWidth="1px" borderColor={"gray"} />
 
+          {/* <Accordion allowToggle p="0px" m="0px" borderWidth={0} position="absolute" left="0"> */}
+          <div style={{ marginLeft: '-15px' }}>
           <Accordion allowToggle p="0px" m="0px" borderWidth={0}>
             <ListItem  p="10px" borderRadius="10px" m="0px">
               <NavLink to="/create">
@@ -198,6 +200,7 @@ export default function SideBar() {
               </NavLink>
             </ListItem>
           </Accordion>
+          </div>
 
           <NavLink to="/career">
             <ListItem className="listItem" p="10px" borderRadius="10px">
