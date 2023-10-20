@@ -3,6 +3,7 @@ import { Box, Grid, GridItem, Input, FormControl, FormLabel, Text, Button, Conta
 
 export default function CreateCompany() {
   return (
+    <Container maxWidth="80%">
     <form>
       <Text fontWeight="extrabold" color="blue.900" mt="50px">Company Details</Text>
       <Grid templateColumns="repeat(2, 1fr)" gap={4} maxWidth="1000px">
@@ -89,5 +90,6 @@ export default function CreateCompany() {
         <Button w="200px" borderRadius="15px" fontSize="20px" bg="blue.900" color="white" _hover={{bg:"purple.900" , color:"white"}}>Submit</Button>
       </Container>
     </form>
+    </Container>
   );
 }

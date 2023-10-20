@@ -40,7 +40,9 @@ export default function SideBar() {
       <Container>
         <Center>
           <Box boxSize="100px" p="10px">
+          <NavLink to="/">
             <Image src="logo.png" alt="Logo" />
+          </NavLink>
           </Box>
         </Center>
 

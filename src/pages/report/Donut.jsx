@@ -2,7 +2,7 @@ import { useLayoutEffect } from 'react';
 import * as am5 from '@amcharts/amcharts5';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
 import * as am5percent from "@amcharts/amcharts5/percent";
-import { Box, Card, Center, Text } from '@chakra-ui/react';
+import { Box, Card, Text } from '@chakra-ui/react';
 
 const Donut = () => {
   useLayoutEffect(() => {
@@ -73,7 +73,7 @@ const Donut = () => {
 
   return (
    
-    <Card w={{md:"30em"}} ml="0.7em" p="1em">
+    <Card w={{base:"10em", md:"30em"}} mx="10px" p="1em">
         
         <Text fontWeight="bold" fontSize="1.3em" color="blackAlpha.900">Employee Composition</Text>
         <Box id="donutChart" w="15em" h="15em" className='' m="auto"></Box>

@@ -11,7 +11,7 @@ function Dashboard() {
             <Button bg="blue.900" color="white"  m={{base:"5px", sm:"10px", md:"20px"}} fontSize={{sm:"12px", md:"20px"}} maxWidth={{base:"100px", md:"200px"}} h="70px" _hover={{bg:"purple.900", color:"white"}}>Create Company</Button>
           </GridItem>
           </NavLink>
-          <GridItem colSpan={3} p="50px" m={{base:"5px", sm:"10px", md:"20px"}}>
+          <GridItem colSpan={3} px="50px" m={{base:"5px", sm:"10px", md:"20px"}}>
           <Text fontSize="20px" fontWeight="bold" ml="20px">Companies</Text>
             <Button bg="blue.900" color="white" fontSize={{sm:"12px", md:"20px"}} maxWidth={{base:"100px", md:"200px"}} m="20px"  h="70px" _hover={{bg:"purple.900", color:"white"}}>
               <span className="btn-avatar"><Avatar size="sm" name='avatar' src='logo.png' bg="white" p="5px" mr="10px" /></span>DSA</Button>

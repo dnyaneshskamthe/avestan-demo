@@ -19,7 +19,6 @@ import "./basic/basic.css"
 import Career from './pages/career/Career'
 import ProfitLoss from './pages/profitLoss/ProfitLoss'
 import BalanceSheet from './pages/balanceSheet/BalanceSheet'
-import Report from './pages/report/Report'
 import Main from './pages/report/Main'
 
 // router and routes
