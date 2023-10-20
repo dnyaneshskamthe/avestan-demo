@@ -1,5 +1,5 @@
-import { Box, Grid, GridItem, Input, FormControl, FormLabel, Text, Button, Center, Container } from "@chakra-ui/react";
-import * as React from "react";
+import { Box, Grid, GridItem, Input, FormControl, FormLabel, Text, Button, Container } from "@chakra-ui/react";
+
 
 export default function CreateCompany() {
   return (
