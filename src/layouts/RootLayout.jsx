@@ -17,6 +17,7 @@ function RootLayout() {
       <GridItem 
         as="main"
         colSpan={{base:"5", md:"5"}}
+        bg="gray.100"
         >
         <Navbar/>
         <Outlet/>

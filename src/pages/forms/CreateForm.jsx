@@ -1,6 +1,5 @@
-import { Box, Grid, GridItem, Input, FormControl, FormLabel, Select, Button, Container, Text,Checkbox, CheckboxGroup, Spacer } from "@chakra-ui/react";
-// import { roundedFull } from '@chakra-ui/icons'
-import { RiCheckboxBlankCircleLine } from "react-icons/ri";
+import { Box, Grid, GridItem, Input, FormControl, FormLabel, Select, Button, Container, Text,Checkbox, Spacer } from "@chakra-ui/react";
+
 
 export default function CreateForm() {
   return (

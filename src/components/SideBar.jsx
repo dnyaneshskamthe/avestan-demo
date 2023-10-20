@@ -19,6 +19,7 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  useToast
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { AddIcon, MinusIcon, WarningTwoIcon } from "@chakra-ui/icons";
@@ -33,6 +34,7 @@ import {
 import { CiLogout, CiMoneyBill } from "react-icons/ci";
 
 export default function SideBar() {
+  const toast = useToast()
   return (
     <div>
       <Container>
@@ -84,8 +86,9 @@ export default function SideBar() {
                           p="10px"
                           borderRadius="10px"
                         >
-                          
-                          <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
+                          <span className="rightIcon">
+                          <Icon as={BsChevronRight} className="rightIcon" boxSize={4} mr="10px"/>
+                          </span>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon as={BsAmd} color="gray.500" ml="10px" />
                             </Button>
@@ -103,7 +106,9 @@ export default function SideBar() {
                           borderRadius="10px"
                         >
                           
-                          <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
+                          <span className="rightIcon">
+                          <Icon as={BsChevronRight} className="rightIcon" boxSize={4} mr="10px"/>
+                          </span>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon
                                 as={BsFileEarmarkSpreadsheet}
@@ -125,7 +130,9 @@ export default function SideBar() {
                           borderRadius="10px"
                         >
                           
-                          <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
+                          <span className="rightIcon">
+                          <Icon as={BsChevronRight} className="rightIcon" boxSize={4} mr="10px"/>
+                          </span>
                             <Button bg="gray.200" w="10px" mr="10px">
                               <ListIcon
                                 as={CiMoneyBill}
@@ -146,7 +153,9 @@ export default function SideBar() {
                           borderRadius="10px"
                         >
                           
-                          <Icon as={BsChevronRight}  fontSize="15px" mr="10px"/>
+                          <span className="rightIcon">
+                          <Icon as={BsChevronRight} className="rightIcon" boxSize={4} mr="10px"/>
+                          </span>
                             <Button bg="gray.200" w="10px" mr="10px" width="20px">
                               <ListIcon
                                 as={BsFillFileEarmarkSpreadsheetFill}
@@ -188,19 +197,20 @@ export default function SideBar() {
             </ListItem>
           </Accordion>
 
-          <ListItem className="listItem" p="10px" borderRadius="10px">
-            <NavLink to="/create">
+          <NavLink to="/career">
+            <ListItem className="listItem" p="10px" borderRadius="10px">
+            
               <Button bg="gray.200" w="10px" mr="10px">
                 <ListIcon as={BsAmd} color="gray.500" ml="10px" />
               </Button>
               <Text as ="span" className="sidebar-text"pl="10px" fontSize="15px">
                 Career
               </Text>
-            </NavLink>
           </ListItem>
+          </NavLink>
 
-          <ListItem className="listItem" p="10px" borderRadius="10px">
-            <NavLink to="/create">
+          <NavLink to="/balancesheet">
+            <ListItem className="listItem" p="10px" borderRadius="10px">
               <Button bg="gray.200" w="10px" mr="10px">
                 <ListIcon
                   as={BsFileEarmarkSpreadsheet}
@@ -211,22 +221,22 @@ export default function SideBar() {
               <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                 Balancesheet
               </Text>
-            </NavLink>
           </ListItem>
+          </NavLink>
 
-          <ListItem className="listItem" p="10px" borderRadius="10px">
-            <NavLink to="/create">
+          <NavLink to="/profitloss">
+            <ListItem className="listItem" p="10px" borderRadius="10px">            
               <Button bg="gray.200" w="10px" mr="10px">
                 <ListIcon as={CiMoneyBill} color="gray.500" ml="10px" />
               </Button>
               <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                 Profit & Loss
               </Text>
-            </NavLink>
           </ListItem>
+          </NavLink>
 
-          <ListItem className="listItem" p="10px" borderRadius="10px">
-            <NavLink to="/create">
+          <NavLink to="/report">
+            <ListItem className="listItem" p="10px" borderRadius="10px">
               <Button bg="gray.200" w="10px" mr="10px">
                 <ListIcon
                   as={BsFillFileEarmarkSpreadsheetFill}
@@ -237,23 +247,34 @@ export default function SideBar() {
               <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                 Report
               </Text>
-            </NavLink>
           </ListItem>
+          </NavLink>
 
           <Divider borderWidth="1px" borderColor={"gray"} />
 
-          <ListItem className="listItem" p="10px" borderRadius="10px">
-            <NavLink to="/help">
+          <NavLink to="/help">
+            <ListItem className="listItem" p="10px" borderRadius="10px">            
               <Button bg="gray.200" w="10px" mr="10px">
                 <ListIcon as={BsFlagFill} color="gray.500" ml="10px" />
               </Button>
               <Text as ="span" className="sidebar-text" pl="10px" fontSize="15px">
                 Help
               </Text>
-            </NavLink>
-          </ListItem>
+             </ListItem>
+             </NavLink>
 
-          <ListItem className="listItem" p="10px" borderRadius="10px">
+          <ListItem className="listItem" p="10px" borderRadius="10px" 
+          onClick={() =>
+            toast({
+              title: 'Logout',
+              description: "You have sucessfully logged out",
+              status: 'success',
+              duration: 3000,
+              position: "top",
+              isClosable: true,
+            })
+          }
+          >
             <Button bg="gray.200" w="10px" mr="10px">
               <ListIcon as={CiLogout} ml="10px" />
             </Button>
@@ -296,9 +317,10 @@ export default function SideBar() {
                 bg="blue.900"
                 color="white"
                 _hover={{ color: "white", bg: "blue.900" }}
+                size={{base:"40px",sm:"50px", md:"100px"}}
               >
-                <Icon as={WarningTwoIcon} ml="10px" mr="10px" />
-                <Text textAlign="center" as="span" fontSize="xs" mr="10px">
+                <span className="footer-icon"><Icon as={WarningTwoIcon} ml="10px" mr="10px" /></span>
+                <Text textAlign="center" as="span" padding={{base:"2px", md:"10px"}} fontSize={{base:"12px", md:"20px"}} mr="10px">
                   Report
                 </Text>
               </Button>

@@ -16,6 +16,11 @@ import Help from './pages/Help'
 // import CreateLoan from './pages/forms/CreateLoan'
 import CreateCompany from './pages/forms/CreateCompany'
 import "./basic/basic.css"
+import Career from './pages/career/Career'
+import ProfitLoss from './pages/profitLoss/ProfitLoss'
+import BalanceSheet from './pages/balanceSheet/BalanceSheet'
+import Report from './pages/report/Report'
+import Main from './pages/report/Main'
 
 // router and routes
 
@@ -26,6 +31,10 @@ const router = createBrowserRouter(
         {/* <Route path="/dashboard/*" element={<Dashboard/>}></Route> */}
         <Route path="/createCompany" element={<CreateCompany/>}/>
         <Route path="/create/*" element={<Create/>}></Route> 
+        <Route path="/career" element={<Career/>}></Route>
+        <Route path="/profitloss" element={<ProfitLoss/>}></Route>
+        <Route path="/balancesheet" element={<BalanceSheet/>}></Route>
+        <Route path="/report" element={<Main/>}></Route>
         <Route path="/help" element={<Help/>}></Route>
     </Route>
   )
