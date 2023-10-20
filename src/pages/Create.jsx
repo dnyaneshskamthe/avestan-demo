@@ -20,9 +20,6 @@ import CreateButtons from "./forms/CreateButtons";
 function Create() {
   return (
     <div>
- 
-     
-
       <Routes>
         <Route path="/" element={<Navigate to='createButtons' />}/>
         <Route path="createButtons" element={<CreateButtons/>} />

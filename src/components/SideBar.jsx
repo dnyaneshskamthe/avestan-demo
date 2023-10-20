@@ -36,9 +36,11 @@ export default function SideBar() {
   return (
     <div>
       <Container>
-        <Box boxSize="100px" p="10px">
-          <Image src="logo.png" alt="Logo" />
-        </Box>
+        <Center>
+          <Box boxSize="100px" p="10px">
+            <Image src="logo.png" alt="Logo" />
+          </Box>
+        </Center>
 
         <List fontSize="1.2em" spacing={4} p="10px">
           <ListItem className="listItem" p="10px" borderRadius="10px">
@@ -51,8 +53,9 @@ export default function SideBar() {
           </ListItem>
 
           <Divider borderWidth="1px" borderColor={"gray"} />
-          <Accordion allowToggle p="0px" m="0px">
-            <ListItem className="listItem" p="10px" borderRadius="10px" m="0px">
+
+          <Accordion allowToggle p="0px" m="0px" borderWidth={0}>
+            <ListItem  p="10px" borderRadius="10px" m="0px">
               <NavLink to="/create">
                 <AccordionItem _hover={{ bg: "white" }}>
                   {({ isExpanded }) => (
