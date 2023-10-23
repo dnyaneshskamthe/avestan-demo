@@ -20,6 +20,7 @@ import Career from './pages/career/Career'
 import ProfitLoss from './pages/profitLoss/ProfitLoss'
 import BalanceSheet from './pages/balanceSheet/BalanceSheet'
 import Main from './pages/report/Main'
+import { Box } from '@chakra-ui/react'
 
 // router and routes
 
@@ -41,7 +42,9 @@ const router = createBrowserRouter(
 function App() {
  
   return (
-   <RouterProvider router={router}/>
+    <Box w="100vw">
+      <RouterProvider router={router}/>
+   </Box>
   )
 }
 
